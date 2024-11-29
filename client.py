@@ -9,4 +9,4 @@ def add_product(name, description, price):
         'description': description,
         'price': price
     }
-    
+    response = requests.post(f'{BASE_URL}/products', json=payload)
